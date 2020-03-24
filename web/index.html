@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>web</title>
+  </head>
+  <body>
+    <div id="app"></div>
+ 
+    <!-- built files will be auto injected -->
+    
+    <script type="text/javascript">
+    	 (function(){
+        	var html = document.documentElement;
+        	var w = html.clientWidth;
+        	//在750的尺寸下 1个rem==100像素
+        	html.style.fontSize = (w/750)*100 + "px";
+        	window.onresize = ()=>{
+        		arguments.callee()
+        	}
+        }())
+    </script>
+  </body>
+</html>
